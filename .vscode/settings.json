@@ -1,0 +1,116 @@
+{
+  // Editor and UI Customization
+  "editor.cursorSurroundingLines": 8,
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "'FiraCode Nerd Font'",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Terminal and Shell Configurations
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
+  "terminal.integrated.enableImages": true,
+
+  // Theme and Appearance
+  "workbench.iconTheme": "ayu",
+  "workbench.editor.scrollToSwitchTabs": true,
+
+  // Version Control and Git
+  "git.autofetch": true,
+  "scm.diffDecorationsGutterVisibility": "hover",
+  "scm.diffDecorations": "gutter",
+
+  // Vim Extension Configuration
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#D48EF9",
+  "vim.highlightedyank.duration": 100,
+  "vim.easymotion": true,
+  // "vim.enableNeovim": true,
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Switch between buffers
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    // Scroll lines like a pro
+    {
+      "before": ["<S-j>"],
+      "commands": [
+        {
+          "command": "editorScroll",
+          "args": {
+            "to": "down",
+            "by": "line",
+            "revealCursor": true,
+            "value": 8
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": [
+        {
+          "command": "editorScroll",
+          "args": {
+            "to": "up",
+            "by": "line",
+            "revealCursor": true,
+            "value": 8
+          }
+        }
+      ]
+    }
+  ],
+
+  // Explorer and Sidebar Config
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": true,
+  "window.restoreFullscreen": true,
+  "window.newWindowDimensions": "inherit",
+
+  // Code runner settings
+  "code-runner.executorMap": {
+    "cpp": "g++-14 -std=c++17 -Wall -o $fileNameWithoutExt $fileName && ./$fileNameWithoutExt",
+    "python": "python3 -u"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.preserveFocus": false,
+
+  // output.txt for CP
+  "files.associations": {
+    "output.txt": "plaintext"
+  },
+
+  // General Settings
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "terminal.integrated.fontSize": 14,
+  "editor.mouseWheelZoom": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "editor.formatOnSave": true,
+  "breadcrumbs.enabled": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "GitHub Dark",
+  "explorer.confirmPasteNative": false
+}

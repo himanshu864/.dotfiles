@@ -1,0 +1,166 @@
+[
+  // Code Runner Shortcuts
+  {
+    "key": "cmd+shift+/",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "cmd+shift+'",
+    "command": "workbench.action.terminal.kill"
+  },
+
+  // CP Shortcut
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Run Competitive Program"
+  },
+  // CMD + E for toggling file explorer
+  {
+    "key": "cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "!explorerViewletVisible"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "explorerViewletVisible && !explorerViewletFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.closeSidebar",
+    "when": "explorerViewletFocus"
+  },
+
+  // Terminal NAVIGATION
+  {
+    "key": "cmd+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+
+  // FILE TREE
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+
+  // NAVIGATE SUGGESTIONS
+  {
+    "key": "cmd+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetVisible"
+  },
+
+  // QUICK OPEN NAVIGATION
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+
+  // FILE NAVIGATION
+  {
+    "key": "h",
+    "command": "list.collapse",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    "key": "l",
+    "command": "list.select",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "explorerViewletFocus && !inputFocus"
+  },
+
+  // EDITOR GROUP NAVIGATION
+  {
+    "key": "cmd+shift+h",
+    "command": "workbench.action.focusPreviousGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+l",
+    "command": "workbench.action.focusNextGroup",
+    "when": "editorTextFocus"
+  },
+
+  // Live Server Shortcuts
+  {
+    "key": "ctrl+cmd+/",
+    "command": "extension.liveServer.goOnline",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+'",
+    "command": "extension.liveServer.goOffline",
+    "when": "editorTextFocus"
+  },
+
+  // Toggle Visibilities
+  {
+    "key": "ctrl+cmd+s",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "ctrl+cmd+b",
+    "command": "workbench.action.focusActivityBar"
+  },
+  {
+    "key": "ctrl+shift+cmd+b",
+    "command": "workbench.action.activityBarLocation.hide"
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "-breadcrumbs.toggleToOn",
+    "when": "!config.breadcrumbs.enabled"
+  }
+]

@@ -1,0 +1,10 @@
+set selection-clipboard clipboard
+
+# Enable recolor mode (black background with white text)
+map <C-r> recolor
+# set recolor true
+set recolor-keephue true
+
+# Toggle fullscreen mode
+map <C-0> fullscreen
+
